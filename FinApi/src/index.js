@@ -44,7 +44,7 @@ app.post("/account", (request, response) => {
   );
 
   if (customerAlreadyExists) {
-    return response.status(400).json({ error: "Customer already exists" });
+    return response.status(400).json({ error: "Customer already exists!" });
   }
 
   const id = uuidv4();
